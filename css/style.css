@@ -260,6 +260,12 @@
     background:var(--steel); border:1px solid var(--line); border-radius:4px;
     overflow:hidden; position:relative; transition:transform .2s, border-color .2s;
   }
+
+  .card-img img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  }
   .card:hover{transform:translateY(-4px); border-color:var(--acid);}
   .card-img{
     aspect-ratio:1/1; background:
