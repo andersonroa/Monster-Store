@@ -15,6 +15,7 @@
   }
   *{box-sizing:border-box; margin:0; padding:0;}
   html{scroll-behavior:smooth;}
+
   
   body{
     background:var(--ink);
@@ -73,9 +74,14 @@
     backdrop-filter:blur(10px);
     border-bottom:1px solid var(--line);
   }
+
+  .logo-mini img{
+  width:70px;
+  height:auto;
+  }
   .logo-mini{
     font-family:'Anton', sans-serif;
-    font-size:22px;
+    font-size:18px;
     letter-spacing:0.02em;
     background:linear-gradient(180deg, var(--chrome-1) 0%, var(--chrome-2) 45%, var(--chrome-3) 55%, var(--chrome-1) 100%);
     -webkit-background-clip:text;
