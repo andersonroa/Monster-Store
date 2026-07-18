@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>MONSTER STORE — Ropa, Accesorios, Perfumes & Zapatos</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Anton&family=Space+Mono:wght@400;700&family=Work+Sans:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+  <div class="noise"></div>
+
+  <div class="tagbar mono">
+    <span>★ ENVÍOS A TODA COLOMBIA</span>
+    <span>NUEVA TEMPORADA Y2K</span>
+    <span>★ STOCK LIMITADO</span>
+    <span>PAGA CONTRA ENTREGA</span>
+    <span>★ ROPA · ACCESORIOS · PERFUMES · ZAPATOS</span>
+  </div>
+
+  <nav>
+    <a href="#top" class="logo-mini">MONSTER<span class="dot">.</span>STORE</a>
+    <ul class="nav-links">
+      <li><a href="#sobre">La marca</a></li>
+      <li><a href="#ia">IA Style</a></li>
+      <li><a href="#catalogo">Catálogo</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+    <a href="#catalogo" class="nav-cta">Ver stock</a>
+    <div class="burger">☰</div>
+  </nav>
+
+  <section class="hero" id="top">
+    <span class="hero-eyebrow">MARCA URBANA · 2000s REVIVAL</span>
+    <h1>MONSTER<br>STORE<span class="small">Viste distinto. Gasta poco.</span></h1>
+    <p class="hero-sub">Ropa, accesorios, perfumes y zapatos con actitud urbana, calidad real y precios que no te dejan
+      en quiebra. Compra por redes o por la web — pronto, también en tienda física.</p>
+    <div class="hero-actions">
+      <button class="btn btn-primary"
+        onclick="document.getElementById('catalogo').scrollIntoView({behavior:'smooth'})">Explorar stock</button>
+      <button class="btn btn-ghost" onclick="document.getElementById('ia').scrollIntoView({behavior:'smooth'})">Probar
+        el styling con IA</button>
+    </div>
+    <div class="hero-stats">
+      <div><span class="num">4</span><span class="lbl">Categorías activas</span></div>
+      <div><span class="num">100%</span><span class="lbl">Estilo urbano</span></div>
+      <div><span class="num">24/7</span><span class="lbl">Recomendación IA</span></div>
+      <div><span class="num">COL</span><span class="lbl">Próxima expansión nacional</span></div>
+    </div>
+  </section>
+
+  <section class="about" id="sobre">
+    <div class="section-head">
+      <div>
+        <span class="section-tag">// La marca</span>
+        <h2>No es solo ropa,<br>es una actitud.</h2>
+      </div>
+      <p class="section-desc">MONSTER STORE nace para que cualquiera pueda expresar su estilo sin pagar precios de lujo.
+      </p>
+    </div>
+    <div class="about-grid">
+      <div>
+        <p><strong>MONSTER STORE</strong> es una marca y tienda de moda enfocada en ropa, accesorios y perfumes con
+          estilo urbano y juvenil. Buscamos ofrecer productos modernos y de calidad a precios accesibles, para que
+          expreses tu estilo personal sin gastar grandes cantidades de dinero.</p>
+        <p>Por ahora vendemos a través de <strong>redes sociales y esta página web</strong>, con la meta de abrir tienda
+          física y expandirnos a nivel nacional. Nuestro público: jóvenes y adultos que aman la moda y las compras
+          online.</p>
+        <p>Combinamos <strong>moda, tecnología y atención cercana</strong> para una experiencia de compra completa — eso
+          es lo que nos hace diferentes.</p>
+      </div>
+      <div class="pillars">
+        <div class="pillar">
+          <span class="pillar-num mono">01</span>
+          <div>
+            <h3>Precio real</h3>
+            <p>Productos de calidad sin inflar el precio. Estilo accesible para todos.</p>
+          </div>
+        </div>
+        <div class="pillar">
+          <span class="pillar-num mono">02</span>
+          <div>
+            <h3>Tecnología aplicada</h3>
+            <p>IA integrada que recomienda outfits y productos según tu gusto.</p>
+          </div>
+        </div>
+        <div class="pillar">
+          <span class="pillar-num mono">03</span>
+          <div>
+            <h3>Cercanía real</h3>
+            <p>Atención personalizada desde redes sociales y la web, sin filtros corporativos.</p>
+          </div>
+        </div>
+        <div class="pillar">
+          <span class="pillar-num mono">04</span>
+          <div>
+            <h3>Visión nacional</h3>
+            <p>De tienda online a marca reconocida, con tienda física en camino.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="ai-feature" id="ia">
+    <div class="ai-grid">
+      <div>
+        <span class="section-tag">// Innovación</span>
+        <h2>Tu estilista personal, con inteligencia artificial.</h2>
+        <p>La principal innovación de MONSTER STORE: una IA integrada en la web que aprende tus gustos, preferencias y
+          necesidades para recomendarte justo lo que buscas — sin perder horas haciendo scroll.</p>
+        <ul class="ai-list">
+          <li>Recomendaciones personalizadas según tus compras y gustos</li>
+          <li>Armado automático de outfits completos (prenda + accesorio + perfume)</li>
+          <li>Sugerencias según la ocasión: casual, fiesta, calle, formal</li>
+          <li>Aprende contigo: mientras más compras, mejor te conoce</li>
+        </ul>
+      </div>
+      <div class="chat-mock">
+        <div class="mhead"><span class="led"></span> MONSTER AI · ASISTENTE DE ESTILO</div>
+        <div class="bubble user"><span class="tag">Tú</span>Necesito un outfit urbano para una salida nocturna,
+          presupuesto bajo.</div>
+        <div class="bubble ai"><span class="tag">Monster AI</span>Te armé un look: chaqueta oversize + cadena
+          minimalista + perfume amaderado. Todo dentro de tu presupuesto y disponible en stock ahora mismo.</div>
+        <div class="bubble user"><span class="tag">Tú</span>¿Y para uso diario?</div>
+        <div class="bubble ai"><span class="tag">Monster AI</span>Combina mejor con tenis blancos y gorra — estilo más
+          relajado, mismo precio accesible.</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="catalog" id="catalogo">
+    <div class="section-head">
+      <div>
+        <span class="section-tag">// Inventario en vivo</span>
+        <h2>Catálogo & Stock</h2>
+      </div>
+      <p class="section-desc">Espacios listos para cargar el inventario real: foto, nombre, precio y disponibilidad por
+        categoría.</p>
+    </div>
+
+    <div class="tabs">
+      <button class="tab active" data-tab="ropa">Ropa</button>
+      <button class="tab" data-tab="accesorios">Accesorios</button>
+      <button class="tab" data-tab="perfumes">Perfumes</button>
+      <button class="tab" data-tab="zapatos">Zapatos</button>
+    </div>
+
+    <!-- ROPA -->
+    <div class="panel active" id="panel-ropa">
+      <div class="stock-meta">
+        <span>Categoría: <strong style="color:var(--bone)">Ropa</strong></span>
+        <span class="count">Productos cargados: <strong>0</strong> / 8 espacios</span>
+      </div>
+      <div class="grid-products">
+        <!-- Repite esta estructura por cada prenda -->
+        <div class="card">
+          <span class="card-tag">Nuevo</span>
+          <div class="card-img">
+            <div class="ph"><span class="plus">+</span>FOTO DEL<br>PRODUCTO</div>
+          </div>
+          <div class="card-body">
+            <div class="card-name editable" contenteditable="true">Nombre de la prenda</div>
+            <div class="card-row">
+              <span class="card-price editable" contenteditable="true">$ 0</span>
+              <span class="card-stock in editable" contenteditable="true">Stock: --</span>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <span class="card-tag">Nuevo</span>
+          <div class="card-img">
+            <div class="ph"><span class="plus">+</span>FOTO DEL<br>PRODUCTO</div>
+          </div>
+          <div class="card-body">
+            <div class="card-name editable" contenteditable="true">Nombre de la prenda</div>
+            <div class="card-row">
+              <span class="card-price editable" contenteditable="true">$ 0</span>
+              <span class="card-stock in editable" contenteditable="true">Stock: --</span>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <span class="card-tag">Nuevo</span>
+          <div class="card-img">
+            <div class="ph"><span class="plus">+</span>FOTO DEL<br>PRODUCTO</div>
+          </div>
+          <div class="card-body">
+            <div class="card-name editable" contenteditable="true">Nombre de la prenda</div>
+            <div class="card-row">
+              <span class="card-price editable" contenteditable="true">$ 0</span>
+              <span class="card-stock in editable" contenteditable="true">Stock: --</span>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <span class="card-tag">Nuevo</span>
+          <div class="card-img">
+            <div class="ph"><span class="plus">+</span>FOTO DEL<br>PRODUCTO</div>
+          </div>
+          <div class="card-body">
+            <div class="card-name editable" contenteditable="true">Nombre de la prenda</div>
+            <div class="card-row">
+              <span class="card-price editable" contenteditable="true">$ 0</span>
+              <span class="card-stock in editable" contenteditable="true">Stock: --</span>
+            </div>
+          </div>
+        </div>
+        <div class="add-card" onclick="duplicateCard('ropa')"><span class="plus-big">+</span><span class="lbl">Añadir
+            prenda</span></div>
+      </div>
+    </div>
+
+    <!-- ACCESORIOS -->
+    <div class="panel" id="panel-accesorios">
+      <div class="stock-meta">
+        <span>Categoría: <strong style="color:var(--bone)">Accesorios</strong></span>
+        <span class="count">Productos cargados: <strong>0</strong> / 8 espacios</span>
+      </div>
+      <div class="grid-products">
+        <div class="card">
+          <span class="card-tag">Nuevo</span>
+          <div class="card-img">
+            <div class="ph"><span class="plus">+</span>FOTO DEL<br>ACCESORIO</div>
+          </div>
+          <div class="card-body">
+            <div class="card-name editable" contenteditable="true">Nombre del accesorio</div>
+            <div class="card-row">
+              <span class="card-price editable" contenteditable="true">$ 0</span>
+              <span class="card-stock in editable" contenteditable="true">Stock: --</span>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <span class="card-tag">Nuevo</span>
+          <div class="card-img">
+            <div class="ph"><span class="plus">+</span>FOTO DEL<br>ACCESORIO</div>
+          </div>
+          <div class="card-body">
+            <div class="card-name editable" contenteditable="true">Nombre del accesorio</div>
+            <div class="card-row">
+              <span class="card-price editable" contenteditable="true">$ 0</span>
+              <span class="card-stock in editable" contenteditable="true">Stock: --</span>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <span class="card-tag">Nuevo</span>
+          <div class="card-img">
+            <div class="ph"><span class="plus">+</span>FOTO DEL<br>ACCESORIO</div>
+          </div>
+          <div class="card-body">
+            <div class="card-name editable" contenteditable="true">Nombre del accesorio</div>
+            <div class="card-row">
+              <span class="card-price editable" contenteditable="true">$ 0</span>
+              <span class="card-stock in editable" contenteditable="true">Stock: --</span>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <span class="card-tag">Nuevo</span>
+          <div class="card-img">
+            <div class="ph"><span class="plus">+</span>FOTO DEL<br>ACCESORIO</div>
+          </div>
+          <div class="card-body">
+            <div class="card-name editable" contenteditable="true">Nombre del accesorio</div>
+            <div class="card-row">
+              <span class="card-price editable" contenteditable="true">$ 0</span>
+              <span class="card-stock in editable" contenteditable="true">Stock: --</span>
+            </div>
+          </div>
+        </div>
+        <div class="add-card" onclick="duplicateCard('accesorios')"><span class="plus-big">+</span><span
+            class="lbl">Añadir accesorio</span></div>
+      </div>
+    </div>
+
+    <!-- PERFUMES -->
+    <div class="panel" id="panel-perfumes">
+      <div class="stock-meta">
+        <span>Categoría: <strong style="color:var(--bone)">Perfumes</strong></span>
+        <span class="count">Productos cargados: <strong>0</strong> / 8 espacios</span>
+      </div>
+      <div class="grid-products">
+        <div class="card">
+          <span class="card-tag">Nuevo</span>
+          <div class="card-img">
+            <div class="ph"><span class="plus">+</span>FOTO DEL<br>PERFUME</div>
+          </div>
+          <div class="card-body">
+            <div class="card-name editable" contenteditable="true">Nombre del perfume</div>
+            <div class="card-row">
+              <span class="card-price editable" contenteditable="true">$ 0</span>
+              <span class="card-stock in editable" contenteditable="true">Stock: --</span>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <span class="card-tag">Nuevo</span>
+          <div class="card-img">
+            <div class="ph"><span class="plus">+</span>FOTO DEL<br>PERFUME</div>
+          </div>
+          <div class="card-body">
+            <div class="card-name editable" contenteditable="true">Nombre del perfume</div>
+            <div class="card-row">
+              <span class="card-price editable" contenteditable="true">$ 0</span>
+              <span class="card-stock in editable" contenteditable="true">Stock: --</span>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <span class="card-tag">Nuevo</span>
+          <div class="card-img">
+            <div class="ph"><span class="plus">+</span>FOTO DEL<br>PERFUME</div>
+          </div>
+          <div class="card-body">
+            <div class="card-name editable" contenteditable="true">Nombre del perfume</div>
+            <div class="card-row">
+              <span class="card-price editable" contenteditable="true">$ 0</span>
+              <span class="card-stock in editable" contenteditable="true">Stock: --</span>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <span class="card-tag">Nuevo</span>
+          <div class="card-img">
+            <div class="ph"><span class="plus">+</span>FOTO DEL<br>PERFUME</div>
+          </div>
+          <div class="card-body">
+            <div class="card-name editable" contenteditable="true">Nombre del perfume</div>
+            <div class="card-row">
+              <span class="card-price editable" contenteditable="true">$ 0</span>
+              <span class="card-stock in editable" contenteditable="true">Stock: --</span>
+            </div>
+          </div>
+        </div>
+        <div class="add-card" onclick="duplicateCard('perfumes')"><span class="plus-big">+</span><span
+            class="lbl">Añadir perfume</span></div>
+      </div>
+    </div>
+
+    <!-- ZAPATOS -->
+    <div class="panel" id="panel-zapatos">
+      <div class="stock-meta">
+        <span>Categoría: <strong style="color:var(--bone)">Zapatos</strong></span>
+        <span class="count">Productos cargados: <strong>0</strong> / 8 espacios</span>
+      </div>
+      <div class="grid-products">
+        <div class="card">
+          <span class="card-tag">Nuevo</span>
+          <div class="card-img">
+            <div class="ph"><span class="plus">+</span>FOTO DEL<br>CALZADO</div>
+          </div>
+          <div class="card-body">
+            <div class="card-name editable" contenteditable="true">Nombre del zapato</div>
+            <div class="card-row">
+              <span class="card-price editable" contenteditable="true">$ 0</span>
+              <span class="card-stock in editable" contenteditable="true">Stock: --</span>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <span class="card-tag">Nuevo</span>
+          <div class="card-img">
+            <div class="ph"><span class="plus">+</span>FOTO DEL<br>CALZADO</div>
+          </div>
+          <div class="card-body">
+            <div class="card-name editable" contenteditable="true">Nombre del zapato</div>
+            <div class="card-row">
+              <span class="card-price editable" contenteditable="true">$ 0</span>
+              <span class="card-stock in editable" contenteditable="true">Stock: --</span>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <span class="card-tag">Nuevo</span>
+          <div class="card-img">
+            <div class="ph"><span class="plus">+</span>FOTO DEL<br>CALZADO</div>
+          </div>
+          <div class="card-body">
+            <div class="card-name editable" contenteditable="true">Nombre del zapato</div>
+            <div class="card-row">
+              <span class="card-price editable" contenteditable="true">$ 0</span>
+              <span class="card-stock in editable" contenteditable="true">Stock: --</span>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <span class="card-tag">Nuevo</span>
+          <div class="card-img">
+            <div class="ph"><span class="plus">+</span>FOTO DEL<br>CALZADO</div>
+          </div>
+          <div class="card-body">
+            <div class="card-name editable" contenteditable="true">Nombre del zapato</div>
+            <div class="card-row">
+              <span class="card-price editable" contenteditable="true">$ 0</span>
+              <span class="card-stock in editable" contenteditable="true">Stock: --</span>
+            </div>
+          </div>
+        </div>
+        <div class="add-card" onclick="duplicateCard('zapatos')"><span class="plus-big">+</span><span class="lbl">Añadir
+            zapato</span></div>
+      </div>
+    </div>
+  </section>
+
+  <div class="strip">
+    <h2>Síguenos y entérate primero del nuevo stock.</h2>
+    <form class="strip-form"
+      onsubmit="event.preventDefault(); this.querySelector('input').value=''; alert('¡Gracias por unirte al Monster Squad!');">
+      <input type="email" placeholder="tu@correo.com" required>
+      <button type="submit">Unirme</button>
+    </form>
+  </div>
+
+  <footer id="contacto">
+    <div class="foot-grid">
+      <div>
+        <div class="foot-logo">MONSTER<span>.</span>STORE</div>
+        <p>Moda urbana, accesorios, perfumes y zapatos a precios accesibles — con un asistente de estilo con IA que te
+          conoce mejor cada día.</p>
+      </div>
+      <div class="foot-col">
+        <h4>Tienda</h4>
+        <ul>
+          <li><a href="#catalogo">Ropa</a></li>
+          <li><a href="#catalogo">Accesorios</a></li>
+          <li><a href="#catalogo">Perfumes</a></li>
+          <li><a href="#catalogo">Zapatos</a></li>
+        </ul>
+      </div>
+      <div class="foot-col">
+        <h4>Marca</h4>
+        <ul>
+          <li><a href="#sobre">Sobre nosotros</a></li>
+          <li><a href="#ia">IA Style</a></li>
+          <li><a href="#">Términos</a></li>
+        </ul>
+      </div>
+      <div class="foot-col">
+        <h4>Síguenos</h4>
+        <ul>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">TikTok</a></li>
+          <li><a href="#">WhatsApp</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 Monster Store · Todos los derechos reservados</span>
+      <span>Hecho para los que visten diferente</span>
+    </div>
+  </footer>
+
+  <script src="./js/script.js"></script>
+</body>
+
+</html>
