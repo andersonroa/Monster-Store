@@ -33,11 +33,11 @@
     </a>
     <ul class="nav-links">
       <li><a href="#sobre">La marca</a></li>
-      <li><a href="#ia">IA Style</a></li>
+      <li><a href="#ia">MONSTER IA</a></li>
       <li><a href="#catalogo">Catálogo</a></li>
       <li><a href="#contacto">Contacto</a></li>
     </ul>
-    <a href="#catalogo" class="nav-cta">Ver stock</a>
+    <a href="#catalogo" class="nav-cta">Ver CARRITO</a>
     <div class="burger">☰</div>
   </nav>
 
@@ -48,9 +48,8 @@
       en quiebra. Compra por redes o por la web — pronto, también en tienda física.</p>
     <div class="hero-actions">
       <button class="btn btn-primary"
-        onclick="document.getElementById('catalogo').scrollIntoView({behavior:'smooth'})">Explorar stock</button>
-      <button class="btn btn-ghost" onclick="document.getElementById('ia').scrollIntoView({behavior:'smooth'})">Probar
-        el styling con IA</button>
+        onclick="document.getElementById('catalogo').scrollIntoView({behavior:'smooth'})">VER CATALOGO</button>
+      <button class="btn btn-ghost" onclick="document.getElementById('ia').scrollIntoView({behavior:'smooth'})">PROBAR MONSTER IA</button>
     </div>
     <div class="hero-stats">
       <div><span class="num">4</span><span class="lbl">Categorías activas</span></div>
@@ -164,11 +163,23 @@
         <span class="count">Productos cargados: <strong>0</strong> / 8 espacios</span>
       </div>
       <div class="grid-products">
-        <!-- Repite esta estructura por cada prenda -->
         <div class="card">
-          <span class="card-tag">Nuevo</span>
           <div class="card-img">
-            <img src="./img/productos/ropa/camisa1.png" alt="Camiseta urbana Monster">
+
+            <div class="product-gallery">
+              <img src="./img/productos/ropa/camisas/oversize/oversize-front.png" class="product-img" alt="Camisa oversize frente">
+
+              <img src="./img/productos/ropa/camisas/oversize/oversize-left.png" class="product-img" alt="Camisa oversize izquierda">
+              
+              <img src="./img/productos/ropa/camisas/oversize/oversize-back.png" class="product-img" alt="Camisa oversize espalda">
+              
+              <img src="./img/productos/ropa/camisas/oversize/oversize-right.png" class="product-img" alt="Camisa oversize derecha">
+
+              <img src="./img/productos/ropa/camisas/oversize/oversize-front.png" class="product-img" alt="Camisa oversize frente">
+            </div>
+
+            <span class="card-tag">Nuevo</span>
+
           </div>
         </div>
         <div class="card-body">
@@ -178,9 +189,12 @@
             </div>
           </div>
           <div class="card-row">
-            <span class="card-price editable">$ 80.000</span>
-            <span class="card-stock in editable">Stock: 12</span>
+            <span class="card-price editable">$ 70.000</span>
+            <span class="card-stock in editable">Stock: 25</span>
           </div>
+          <button class="buy-btn">
+            Agregar al carrito
+          </button>
         </div>
       </div>
       <div class="card">

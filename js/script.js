@@ -35,3 +35,70 @@
 
   // initialize counts
   ['ropa','accesorios','perfumes','zapatos'].forEach(updateCount);
+
+  /*carrusel*/ 
+  document.querySelectorAll(".card").forEach(card=>{
+
+    const gallery = card.querySelector(".product-gallery");
+
+    if(!gallery) return;
+
+    const images = gallery.querySelectorAll(".product-img");
+
+    let current = 0;
+
+    let interval;
+
+
+    card.addEventListener("mouseenter",()=>{
+
+        interval=setInterval(()=>{
+
+            current++;
+
+            gallery.style.transform=`translateX(-${current*100}%)`;
+
+
+            if(current === images.length - 1){
+
+                setTimeout(()=>{
+
+                    gallery.style.transition="none";
+
+                    current=0;
+
+                    gallery.style.transform="translateX(0%)";
+
+
+                    setTimeout(()=>{
+
+                        gallery.style.transition="transform .7s cubic-bezier(.22,.61,.36,1)";
+
+                    },50);
+
+
+                },700);
+
+            }
+
+
+        },1500);
+
+
+    });
+
+
+    card.addEventListener("mouseleave",()=>{
+
+        clearInterval(interval);
+
+        current=0;
+
+        gallery.style.transition="transform .7s cubic-bezier(.22,.61,.36,1)";
+
+        gallery.style.transform="translateX(0%)";
+
+    });
+
+
+});
