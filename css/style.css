@@ -299,11 +299,8 @@
     width:100%;
     height:100%;
     object-fit:cover;
-    transition:transform .4s ease;
-  }
-  .card:hover .card-img img{
-    transform:scale(1.08);
-  }
+}
+
   .card:hover{
     transform:translateY(-8px);
     box-shadow:0 15px 35px rgba(0,0,0,.35);
@@ -325,20 +322,21 @@
     display:flex;
     width:100%;
     height:100%;
-    transition:transform .7s 
+    transition:transform .6s 
     cubic-bezier(.22,.61,.36,1);
-  }
+}
+
 
   .product-img{
     min-width:100%;
     height:100%;
     object-fit:cover;
     flex-shrink:0;
-  }
+}
 
-  .card:hover .product-img.active{
+  /*.card:hover .product-img.active{
     transform:scale(1.05);
-  }
+  }*/
   
   .card-img .ph{
     font-family:'Space Mono'; font-size:11px; color:var(--bone-dim); text-align:center; letter-spacing:0.05em;

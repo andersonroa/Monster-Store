@@ -36,7 +36,7 @@
   // initialize counts
   ['ropa','accesorios','perfumes','zapatos'].forEach(updateCount);
 
-  /*carrusel*/ 
+  /* carrusel */
   document.querySelectorAll(".card").forEach(card=>{
 
     const gallery = card.querySelector(".product-gallery");
@@ -46,17 +46,19 @@
     const images = gallery.querySelectorAll(".product-img");
 
     let current = 0;
-
     let interval;
 
 
     card.addEventListener("mouseenter",()=>{
 
-        interval=setInterval(()=>{
+        clearInterval(interval);
+
+        interval = setInterval(()=>{
 
             current++;
 
-            gallery.style.transform=`translateX(-${current*100}%)`;
+            gallery.style.transition="transform .6s cubic-bezier(.22,.61,.36,1)";
+            gallery.style.transform=`translateX(-${current * 100}%)`;
 
 
             if(current === images.length - 1){
@@ -72,17 +74,17 @@
 
                     setTimeout(()=>{
 
-                        gallery.style.transition="transform .7s cubic-bezier(.22,.61,.36,1)";
+                        gallery.style.transition="transform .6s cubic-bezier(.22,.61,.36,1)";
 
                     },50);
 
 
-                },700);
+                },600);
 
             }
 
 
-        },1500);
+        },1000);
 
 
     });
@@ -94,8 +96,7 @@
 
         current=0;
 
-        gallery.style.transition="transform .7s cubic-bezier(.22,.61,.36,1)";
-
+        gallery.style.transition="transform .6s cubic-bezier(.22,.61,.36,1)";
         gallery.style.transform="translateX(0%)";
 
     });
