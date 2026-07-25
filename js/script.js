@@ -103,3 +103,17 @@
 
 
 });
+
+document.querySelectorAll(".favorite-btn").forEach(btn=>{
+
+  btn.addEventListener("click",()=>{
+
+    btn.classList.toggle("active");
+
+    btn.textContent = btn.classList.contains("active")
+      ? "♥"
+      : "♡";
+
+  });
+
+});
