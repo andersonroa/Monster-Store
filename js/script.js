@@ -1,3 +1,39 @@
+// ---------- INTRO CINEMÁTICA ----------
+
+  const intro = document.getElementById("intro");
+  const introStart = document.getElementById("introStart");
+  const introButton = document.getElementById("introButton");
+  const introVideo = document.getElementById("introVideo");
+
+  // Bloquear scroll mientras está la intro
+  document.body.classList.add("intro-active");
+
+  // Al hacer click en ENTRAR
+  introButton.addEventListener("click", () => {
+
+    // Mostrar el video
+    intro.classList.add("playing");
+
+    // Reproducir video con sonido
+    introVideo.play();
+
+  });
+
+  // Cuando termina el video
+  introVideo.addEventListener("ended", () => {
+
+    // Desaparecer intro
+    intro.classList.add("hide");
+
+    // Permitir nuevamente el scroll
+    document.body.classList.remove("intro-active");
+
+    // Eliminar intro después de la transición
+    setTimeout(() => {
+      intro.remove();
+    }, 800);
+
+});
 
   // Tabs
   const tabs = document.querySelectorAll('.tab');
