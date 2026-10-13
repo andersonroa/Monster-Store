@@ -24,11 +24,11 @@
     <!-- Pantalla inicial -->
     <div class="intro-start" id="introStart">
 
-    <button class="intro-button" id="introButton">
+      <button class="intro-button" id="introButton">
         <span class="dragon-left">I</span>
         <span class="enter-text">ENTRAR</span>
         <span class="dragon-right">D</span>
-    </button>
+      </button>
 
     </div>
 
@@ -59,9 +59,38 @@
       <li><a href="#catalogo">Catálogo</a></li>
       <li><a href="#contacto">Contacto</a></li>
     </ul>
-    <a href="#catalogo" class="nav-cta">Ver CATALOGO</a>
     <div class="burger">☰</div>
   </nav>
+
+  <!-- CARRITO -->
+  <button class="cart-button" id="cartButton" type="button">
+    🛒
+    <span class="cart-count" id="cartCount">0</span>
+  </button>
+
+  <aside class="cart-panel" id="cartPanel">
+    <div class="cart-header">
+      <h2>Mi carrito</h2>
+      <button class="cart-close" id="cartClose" type="button">×</button>
+    </div>
+
+    <div class="cart-items" id="cartItems">
+      <p class="cart-empty">Tu carrito está vacío.</p>
+    </div>
+
+    <div class="cart-footer">
+      <div class="cart-total">
+        <span>Total</span>
+        <strong id="cartTotal">$ 0</strong>
+      </div>
+
+      <button class="cart-checkout" id="cartCheckout" type="button">
+        Finalizar compra
+      </button>
+    </div>
+  </aside>
+
+  <div class="cart-overlay" id="cartOverlay"></div>
 
   <section class="hero" id="top">
     <span class="hero-eyebrow">MARCA URBANA · 2000s REVIVAL</span>
@@ -564,7 +593,7 @@
         <h4>Marca</h4>
         <ul>
           <li><a href="#sobre">Sobre nosotros</a></li>
-          <li><a href="#ia">IA Style</a></li>
+          <li><a href="#ia">MONSTER IA</a></li>
           <li><a href="#">Términos</a></li>
         </ul>
       </div>
